@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2e2a68;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #2e2a68 74%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 6rem;
+
+}
+
+
+.search-bar i {
+    color: white;
+    margin-left: 6px;
+
+    transition: all 0.8s ease-in-out;
+}
+
+.search-bar i.rotate {
+    transform: rotateY(720deg);
+}
+
+input {
+    background-color: #f0f0f0;
+    
+    font-family: inherit;
+
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 3px 1px rgb(143, 142, 143);
+}
+
+.card {
+    background-color: #3b2066;
+    background-image: linear-gradient(315deg, #3b2066 0%, #935fbe 74%);
+
+    display: flex;
+    padding: 3rem;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.2);
+
+    color: #cfcfcf;
+
+    max-width: 800px;
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 10px #2e2a68;
+
+    margin-right: 4rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info h2 {
+    padding: 0;
+    margin-top: 0;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    list-style: none;
+
+    font-size: 14px;
+
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.info li {
+    display: flex;
+}
+
+.info i {
+    margin-right: 4px;
+}
+
+.repo {
+    background-color: #3b2066;
+    
+    display: inline-block;
+    color: #f0f0f0;
+
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    text-decoration: none;
+
+    font-size: 0.7rem;
+    border-radius: 3px;
+
+    transition: background 0.2s;
+}
+.repo:hover {
+    background-color: #2e1850;
+}
